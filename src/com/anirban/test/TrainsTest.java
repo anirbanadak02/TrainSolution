@@ -32,7 +32,6 @@ public class TrainsTest {
 		graph.routeTable.put(c, new Edge(c, d, 8).next(new Edge(c, e, 2)));
 		graph.routeTable.put(d, new Edge(d, c, 8).next(new Edge(d, e, 6)));
 		graph.routeTable.put(e, new Edge(e, b, 3));
-		System.out.println(graph);
 	}
 
 	@Test
