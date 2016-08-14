@@ -1,6 +1,6 @@
 package com.anirban.algorithm;
-import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.List;
 import java.util.Map;
 
 public class Routes {
@@ -13,7 +13,7 @@ public class Routes {
 	/*
 	 * Calculates the distance of a specific path
 	 */
-	public int distance(ArrayList<Node> cities) throws Exception {
+	public int distance(List<Node> cities) throws Exception {
 		/*There is no distance between
 		 * no cities or 1 city*/
 		if(cities.size() < 2)

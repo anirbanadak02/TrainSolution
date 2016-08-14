@@ -3,6 +3,7 @@ package com.anirban.test;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -36,7 +37,7 @@ public class TrainsTest {
 
 	@Test
 	public void testDistanceBetween_ABC() throws Exception {
-		ArrayList<Node> route = new ArrayList<Node>(); 
+		List<Node> route = new ArrayList<Node>(); 
 		route.add(a);
 		route.add(b);
 		route.add(c);
@@ -45,7 +46,7 @@ public class TrainsTest {
 
 	@Test
 	public void testDistanceBetween_AD() throws Exception {
-		ArrayList<Node> route = new ArrayList<Node>(); 
+		List<Node> route = new ArrayList<Node>(); 
 		route.add(a);
 		route.add(d);
 		assertEquals(5, graph.distance(route));
@@ -53,7 +54,7 @@ public class TrainsTest {
 
 	@Test
 	public void testDistanceBetween_ADC() throws Exception  {
-		ArrayList<Node> route = new ArrayList<Node>(); 
+		List<Node> route = new ArrayList<Node>(); 
 		route.add(a);
 		route.add(d);
 		route.add(c);
@@ -62,7 +63,7 @@ public class TrainsTest {
 
 	@Test
 	public void testDistanceBetween_AEBCD() throws Exception  {
-		ArrayList<Node> route = new ArrayList<Node>(); 
+		List<Node> route = new ArrayList<Node>(); 
 		route.add(a);
 		route.add(e);
 		route.add(b);
@@ -73,7 +74,7 @@ public class TrainsTest {
 
 	@Test(expected=Exception.class)
 	public void testDistanceBetween_AED() throws Exception  {
-		ArrayList<Node> route = new ArrayList<Node>(); 
+		List<Node> route = new ArrayList<Node>(); 
 		route.add(a);
 		route.add(e);
 		route.add(d);
